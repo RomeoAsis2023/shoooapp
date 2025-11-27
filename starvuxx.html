@@ -5,9 +5,37 @@
 	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
   <meta name="robots" content="noindex, nofollow" />
 	<title>Shoootop</title>	
+	<style>
+		body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.iframe-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
+	</style>
 </head>
 <body>
-   <h1>Starbucks</h1>
+   <div class="iframe-container">
+                    <iframe src="https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=512" title="Alpine Linux VM"></iframe>
+                </div>
 
 </body>
 </html>
